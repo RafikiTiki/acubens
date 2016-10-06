@@ -1,0 +1,30 @@
+#about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    h2 {
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 33px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    h4 {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 400;
+        margin-top: 30px;
+    }
+    p {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    p:last-of-type {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

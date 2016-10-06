@@ -1,0 +1,127 @@
+#testimonials {
+    background-color: #f5f4f7;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    .testimonial-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        &__item {
+            width: calc(100%/3 - 10px);
+            // &:nth-of-type(2) {
+            //     margin-left: 20px;
+            //     margin-right: 20px;
+            // }
+            &__content {
+                position: relative;
+                z-index: 10;
+                background-color: #fafafb;
+                border-radius: 4px;
+                padding: 25px 30px 60px 45px;
+                transition: background-color 0.3s ease-in-out;
+                &__quote-icon {
+                    position: absolute;
+                    top: 33px;
+                    left: 10px;
+                }
+                &__text {
+                    color: #a0a0a0;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+
+                &:after {
+                    content: "";
+                    display: block;
+                    // z-index: -1;
+                    position: absolute;
+                    bottom: -8px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: 24px;
+                    height: 24px;
+                    transform: rotate(45deg);
+                    background-color: #fafafb;
+                    transition: background-color 0.3s ease-in-out;
+                }
+                &:hover, &:active, &:focus {
+                    background-color: #a399cd;
+
+                    .testimonial-container__item__content__text {
+                        color: #fff;
+                    }
+
+                    &:after {
+                        background-color: #a399cd;
+                    }
+
+                    // Animate testimonial author's element
+                    + .testimonial-container__item__author {
+                        margin-top: 20px;
+                        &:after {
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+
+            &__author {
+                position: relative;
+                text-align: center;
+                margin-top: 55px;
+                color: #a0a0a0;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 16px;
+                line-height: 28px;
+                transition: all 0.3s ease-in-out;
+                &:after {
+                    content: "";
+                    display: inline;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                    width: 51px;
+                    height: 51px;
+                    z-index: 10;
+                    background-color: #808080;
+                    opacity: 0.7;
+                    transition: opacity 0.3s ease-in-out;
+                }
+                &__picture {
+                    border-radius: 50%;
+                }
+                &__name {
+                    margin-top: 5px;
+                    font-weight: 600;
+                }
+                &__role {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 14px;
+                }
+            }
+        }
+        @media all and (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            &__item {
+                width: 100%
+            }
+            // &__item:nth-of-type(2) {
+            //     margin: 0;
+            // }
+            &__item:not(:first-of-type) {
+                margin-top: 60px;
+            }
+        }
+    }
+}

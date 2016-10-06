@@ -1,0 +1,129 @@
+header {
+
+    // @media (max-width: 60em) {
+    // nav .show:checked ~ .menu {
+    //         width: 40%;
+    //     }
+    // nav .show:checked + label>i {
+    //         display: none;
+    //     }
+    // }
+    background-image: url("../../../img/stars-bg.jpg");
+    background-size: cover;
+    color: #fefefe;
+    .overlay {
+        overflow: hidden;
+        background: rgba(71, 73, 80, 0.6);
+    }
+    nav {
+        // position: absolute;
+        padding: 3em 0;
+        // background: none;
+        // box-shadow: none;
+        .fa-bars {
+            color: #fefefe;
+        }
+        .brand {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            &__name {
+                height: 3em;
+                color: #fefefe;
+                font-size: 16px;
+            }
+            &__logo {
+                display: inline-block;
+                background-color: #6f4e9a;
+                border-radius: 50%;
+                width: 0.6em;
+                height: 0.6em;
+            }
+        }
+
+        .burger {
+            float: right;
+        }
+
+
+
+        .menu {
+            display: none;
+            float: right;
+            a {
+                color: #d0d0d3;
+                position: relative;
+                margin-left: 20px;
+                font-family: 'Titillium Web', sans-serif;
+                font-weight: 600;
+                font-size: 13px;
+                text-transform: uppercase;
+                transition-duration: 0.2s;
+                transition-property: color;
+                transition-timing-function: ease-out;
+            }
+            a:hover, a:focus, a:active {
+                color: #fefefe;
+            }
+            a:before {
+                content: "";
+                position: absolute;
+                z-index: 10;
+                left: 50%;
+                right: 50%;
+                bottom: -4px;
+                background: #6f4e9a;
+                height: 3px;
+                transition-property: left, right;
+                transition-duration: 0.2s;
+                transition-timing-function: ease-out;
+            }
+            a:hover:before, a:focus:before, a:active:before {
+                left: -3px;
+                right: -3px;
+            }
+        }
+
+        @media all and (min-width: 768px) {
+            .burger {
+                display: none;
+            }
+
+            .menu {
+                display: block;
+            }
+        }
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-family: 'Josefin Slab', serif;
+        font-weight: bold;
+        padding-top: 2.5em;
+        font-size: 50px;
+    }
+
+    h3 {
+        font-family: 'Source Sans Pro', sans-serif;
+        margin-top: 20px;
+        padding-top: 0;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    .btn--download {
+      background-color: #6f4e9a;
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+    .hero {
+        text-align: center;
+    }
+
+    .flexx>* {
+        text-align: center;
+        padding-left: 0;
+    }
+}
