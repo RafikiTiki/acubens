@@ -1,13 +1,4 @@
 header {
-
-    // @media (max-width: 60em) {
-    // nav .show:checked ~ .menu {
-    //         width: 40%;
-    //     }
-    // nav .show:checked + label>i {
-    //         display: none;
-    //     }
-    // }
     background-image: url("../img/stars-bg.jpg");
     background-size: cover;
     color: #fefefe;
@@ -16,10 +7,7 @@ header {
         background: rgba(71, 73, 80, 0.6);
     }
     nav {
-        // position: absolute;
         padding: 3em 0;
-        // background: none;
-        // box-shadow: none;
         .fa-bars {
             color: #fefefe;
         }
@@ -43,9 +31,6 @@ header {
         .burger {
             float: right;
         }
-
-
-
         .menu {
             display: none;
             float: right;
