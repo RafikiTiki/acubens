@@ -10,12 +10,12 @@
         justify-content: space-between;
 
         .gallery__right, .gallery__left {
-            width: calc(50% - 15px);
+            width: calc(50% - 5px);
         }
         .gallery__right {
             display: flex;
             flex-wrap: wrap;
-
+            align-items: center;
             img:nth-of-type(1), img:nth-of-type(2) {
                 margin-bottom: 10px;
             }
@@ -30,90 +30,28 @@
         }
         .gallery__left img {
             width: 100%;
-            align-self: center;
+            // align-self: center;
         }
         img {
             display: block;
             border-radius: 5px;
             max-width: 100%;
-            align-self: center;
-            // width: 50%;
         }
         @media all and (max-width: 768px) {
             flex-direction: column;
             align-items: center;
-            .gallery__right, .gallery__left {
-                width: 100%;
-            }
             .gallery__left {
+                width: 80%;
+                max-width: 550px;
                 margin-bottom: 10px;
+            }
+            .gallery__right {
+                width: 80%;
+                max-width: 550px;
+                margin: 0 auto;
             }
         }
 
     }
 
-    // .container {
-    //     display: flex;
-    //     flex-flow: row;
-    //
-    //     .gallery__right, .gallery__left {
-    //         width: calc(50% - 15px);
-    //     }
-    //     .gallery__right {
-    //         margin-left: 30px;
-    //         display: flex;
-    //         .gallery__row {
-    //             display: flex;
-    //             justify-content: space-between;
-    //
-    //             img:nth-of-type(1), img:nth-of-type(2) {
-    //                 margin-bottom: 25px;
-    //             }
-    //
-    //             img:last-of-type {
-    //                 align-self: flex-end;
-    //             }
-    //
-    //     }
-    //     }
-    //     .gallery__left img {
-    //         width: 100%;
-    //     }
-    //     img {
-    //         display: block;
-    //         border-radius: 5px;
-    //         // width: 50%;
-    //     }
-    // }
-
-
-    // .container {
-    //     .gallery__left, .gallery__right {
-    //         display: inline-block;
-    //         max-width: -webkit-calc(50%-15px);
-    //     }
-    //     .gallery__left {
-    //         margin-right: 30px;
-    //         img {
-    //             width: 100%;
-    //         }
-    //     }
-    //
-    //     .gallery__right {
-    //
-    //         img {
-    //             display: inline-block;
-    //             width: calc(50% - 10px);
-    //
-    //         }
-    //
-    //         img:nth-of-type(1), img:nth-of-type(2) {
-    //             margin-bottom: 25px;
-    //         }
-    //
-    //         img:first-of-type, img:nth-of-type(3) {
-    //             margin-right: 20px;
-    //         }
-    //     }
-    // }
 }
