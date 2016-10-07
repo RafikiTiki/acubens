@@ -41,6 +41,15 @@ a {
     letter-spacing: 2px;
 }
 
+.btn--download {
+  background-color: #6f4e9a;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
 .btn:before {
     content: "";
     position: absolute;
