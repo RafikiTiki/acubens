@@ -24,5 +24,16 @@ footer {
                 }
             }
         }
+        @media all and (max-width: 768px) {
+            & {
+                text-align: center;
+                .copyright {
+                    float: none;
+                }
+                .social {
+                    float: none;
+                }
+            }
+        }
     }
 }
